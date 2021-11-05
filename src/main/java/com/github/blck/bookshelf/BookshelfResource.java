@@ -13,7 +13,8 @@ public class BookshelfResource {
   @GET
   @Produces(MediaType.TEXT_HTML)
   public String getBook() {
-    Book book = new Book("title", "description", LocalDate.now(), 80, "secret!");
+    Book book = new Book("title", "description", LocalDate.now(),
+        80, "secret!");
     return HtmlingUtil.htmling(book);
   }
 }
