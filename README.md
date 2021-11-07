@@ -1,64 +1,156 @@
-# htmling Project
+# htmling example
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+/books/one
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+```html
 
-## Running the application in dev mode
-
-You can run your application in dev mode that enables live coding using:
-
-```shell script
-./gradlew quarkusDev
+<ul classname="Book" style="background-color:red;">
+  <li title="title">Book:</li>
+  <li field="title" style="background-color:orange;">title : XSB</li>
+  <li field="description" style="background-color:yellow;">description : Dennis Ritchie</li>
+  <li field="releasedAt" style="background-color:green;">releasedAt : 2021-11-07</li>
+  <li field="pages" style="background-color:cyan;">pages : 8</li>
+  <li field="author" style="background-color:blue;">author :
+    <ul classname="Author" style="color:white;">
+      <li field="name" style="font-style:italic;">name : Oolong</li>
+      <li field="age">age : 0</li>
+    </ul>
+  </li>
+</ul>
 ```
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
+/books
 
-## Packaging and running the application
+```html
 
-The application can be packaged using:
-
-```shell script
-./gradlew build
+<ul classname="Book" style="background-color:red;">
+  <li title="title">Book:</li>
+  <li field="title" style="background-color:orange;">title : PLANC</li>
+  <li field="description" style="background-color:yellow;">description : Friedrich L. Bauer</li>
+  <li field="releasedAt" style="background-color:green;">releasedAt : 2021-11-07</li>
+  <li field="pages" style="background-color:cyan;">pages : 2</li>
+  <li field="author" style="background-color:blue;">author :
+    <ul classname="Author" style="color:white;">
+      <li field="name" style="font-style:italic;">name : Puar</li>
+      <li field="age">age : 0</li>
+    </ul>
+  </li>
+</ul>
+<ul classname="Book" style="background-color:red;">
+  <li title="title">Book:</li>
+  <li field="title" style="background-color:orange;">title : Wyvern</li>
+  <li field="description" style="background-color:yellow;">description : Alan Kay</li>
+  <li field="releasedAt" style="background-color:green;">releasedAt : 2021-11-07</li>
+  <li field="pages" style="background-color:cyan;">pages : 5</li>
+  <li field="author" style="background-color:blue;">author :
+    <ul classname="Author" style="color:white;">
+      <li field="name" style="font-style:italic;">name : Puar</li>
+      <li field="age">age : 0</li>
+    </ul>
+  </li>
+</ul>
+<ul classname="Book" style="background-color:red;">
+  <li title="title">Book:</li>
+  <li field="title" style="background-color:orange;">title : GRASS</li>
+  <li field="description" style="background-color:yellow;">description : Anders Hejlsberg</li>
+  <li field="releasedAt" style="background-color:green;">releasedAt : 2021-11-07</li>
+  <li field="pages" style="background-color:cyan;">pages : 5</li>
+  <li field="author" style="background-color:blue;">author :
+    <ul classname="Author" style="color:white;">
+      <li field="name" style="font-style:italic;">name : Puar</li>
+      <li field="age">age : 0</li>
+    </ul>
+  </li>
+</ul>
+<ul classname="Book" style="background-color:red;">
+  <li title="title">Book:</li>
+  <li field="title" style="background-color:orange;">title : TOM</li>
+  <li field="description" style="background-color:yellow;">description : Alan Kay</li>
+  <li field="releasedAt" style="background-color:green;">releasedAt : 2021-11-07</li>
+  <li field="pages" style="background-color:cyan;">pages : 4</li>
+  <li field="author" style="background-color:blue;">author :
+    <ul classname="Author" style="color:white;">
+      <li field="name" style="font-style:italic;">name : Puar</li>
+      <li field="age">age : 0</li>
+    </ul>
+  </li>
+</ul>
+<ul classname="Book" style="background-color:red;">
+  <li title="title">Book:</li>
+  <li field="title" style="background-color:orange;">title : MATLAB</li>
+  <li field="description" style="background-color:yellow;">description : Guy L. Steele, Jr.</li>
+  <li field="releasedAt" style="background-color:green;">releasedAt : 2021-11-07</li>
+  <li field="pages" style="background-color:cyan;">pages : 4</li>
+  <li field="author" style="background-color:blue;">author :
+    <ul classname="Author" style="color:white;">
+      <li field="name" style="font-style:italic;">name : Puar</li>
+      <li field="age">age : 0</li>
+    </ul>
+  </li>
+</ul>
+<ul classname="Book" style="background-color:red;">
+  <li title="title">Book:</li>
+  <li field="title" style="background-color:orange;">title : S-Lang</li>
+  <li field="description" style="background-color:yellow;">description : Gilad Bracha</li>
+  <li field="releasedAt" style="background-color:green;">releasedAt : 2021-11-07</li>
+  <li field="pages" style="background-color:cyan;">pages : 9</li>
+  <li field="author" style="background-color:blue;">author :
+    <ul classname="Author" style="color:white;">
+      <li field="name" style="font-style:italic;">name : Puar</li>
+      <li field="age">age : 0</li>
+    </ul>
+  </li>
+</ul>
+<ul classname="Book" style="background-color:red;">
+  <li title="title">Book:</li>
+  <li field="title" style="background-color:orange;">title : Nemerle</li>
+  <li field="description" style="background-color:yellow;">description : Dan Ingalls</li>
+  <li field="releasedAt" style="background-color:green;">releasedAt : 2021-11-07</li>
+  <li field="pages" style="background-color:cyan;">pages : 1</li>
+  <li field="author" style="background-color:blue;">author :
+    <ul classname="Author" style="color:white;">
+      <li field="name" style="font-style:italic;">name : Puar</li>
+      <li field="age">age : 0</li>
+    </ul>
+  </li>
+</ul>
+<ul classname="Book" style="background-color:red;">
+  <li title="title">Book:</li>
+  <li field="title" style="background-color:orange;">title : TPU</li>
+  <li field="description" style="background-color:yellow;">description : Rich Hickey</li>
+  <li field="releasedAt" style="background-color:green;">releasedAt : 2021-11-07</li>
+  <li field="pages" style="background-color:cyan;">pages : 0</li>
+  <li field="author" style="background-color:blue;">author :
+    <ul classname="Author" style="color:white;">
+      <li field="name" style="font-style:italic;">name : Puar</li>
+      <li field="age">age : 0</li>
+    </ul>
+  </li>
+</ul>
+<ul classname="Book" style="background-color:red;">
+  <li title="title">Book:</li>
+  <li field="title" style="background-color:orange;">title : CSP</li>
+  <li field="description" style="background-color:yellow;">description : Don Syme</li>
+  <li field="releasedAt" style="background-color:green;">releasedAt : 2021-11-07</li>
+  <li field="pages" style="background-color:cyan;">pages : 8</li>
+  <li field="author" style="background-color:blue;">author :
+    <ul classname="Author" style="color:white;">
+      <li field="name" style="font-style:italic;">name : Puar</li>
+      <li field="age">age : 0</li>
+    </ul>
+  </li>
+</ul>
+<ul classname="Book" style="background-color:red;">
+  <li title="title">Book:</li>
+  <li field="title" style="background-color:orange;">title : LINC</li>
+  <li field="description" style="background-color:yellow;">description : Alan Kay</li>
+  <li field="releasedAt" style="background-color:green;">releasedAt : 2021-11-07</li>
+  <li field="pages" style="background-color:cyan;">pages : 5</li>
+  <li field="author" style="background-color:blue;">author :
+    <ul classname="Author" style="color:white;">
+      <li field="name" style="font-style:italic;">name : Puar</li>
+      <li field="age">age : 0</li>
+    </ul>
+  </li>
+</ul>
 ```
-
-It produces the `quarkus-run.jar` file in the `build/quarkus-app/` directory. Be aware that it’s not
-an _über-jar_ as the dependencies are copied into the `build/quarkus-app/lib/` directory.
-
-The application is now runnable using `java -jar build/quarkus-app/quarkus-run.jar`.
-
-If you want to build an _über-jar_, execute the following command:
-
-```shell script
-./gradlew build -Dquarkus.package.type=uber-jar
-```
-
-The application, packaged as an _über-jar_, is now runnable using `java -jar build/*-runner.jar`.
-
-## Creating a native executable
-
-You can create a native executable using:
-
-```shell script
-./gradlew build -Dquarkus.package.type=native
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container
-using:
-
-```shell script
-./gradlew build -Dquarkus.package.type=native -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./build/htmling-1.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please
-consult https://quarkus.io/guides/gradle-tooling.
-
-## Provided Code
-
-### RESTEasy JAX-RS
-
-Easily start your RESTful Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
