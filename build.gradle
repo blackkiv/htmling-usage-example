@@ -11,11 +11,10 @@ repositories {
 dependencies {
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation 'com.github.blck:htmling:1.0'
+    implementation 'com.github.javafaker:javafaker:1.0.2'
     implementation 'io.quarkus:quarkus-resteasy-jackson'
     implementation 'io.quarkus:quarkus-arc'
     implementation 'io.quarkus:quarkus-resteasy'
-    testImplementation 'io.quarkus:quarkus-junit5'
-    testImplementation 'io.rest-assured:rest-assured'
 }
 
 group 'com.github.blck.bookshelf'
